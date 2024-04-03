@@ -16,8 +16,6 @@ export type Joker = {
   imageUrl: string;
 };
 
-export type Embeddable = Joker;
-
 export const jokers = [
   {
     activation: "independent",
@@ -379,9 +377,3 @@ export const jokers = [
     unlockRequirement: "Available from start.",
   },
 ] satisfies Array<Joker>;
-
-export const jokerKeys = jokers.map((j) => j.name.toLowerCase());
-
-export const jokerMap = Object.fromEntries(
-  jokerKeys.map((key, index) => [key, jokers[index]]),
-);

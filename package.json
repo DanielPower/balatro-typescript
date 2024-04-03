@@ -1,9 +1,12 @@
 {
   "name": "balatro",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Data for Balatro related projects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danielpower/balatro.git"
@@ -17,4 +20,4 @@
     "url": "https://github.com/danielpower/balatro/issues"
   },
   "homepage": "https://github.com/danielpower/balatro#readme"
-b}
+}
