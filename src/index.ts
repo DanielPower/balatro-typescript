@@ -1,2 +1,1 @@
-export { jokers } from "./jokers";
-
+export { Joker, jokers } from "./jokers";

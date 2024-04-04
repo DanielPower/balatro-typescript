@@ -1,23 +1,28 @@
 {
   "name": "balatro",
-  "version": "0.0.3",
-  "description": "Data for Balatro related projects",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "version": "0.0.5",
+  "author": "Daniel Power",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danielpower/balatro.git"
   },
-  "keywords": [
-    "balatro"
-  ],
-  "author": "Daniel Power",
-  "license": "ISC",
+  "main": "dist/index.js",
   "bugs": {
     "url": "https://github.com/danielpower/balatro/issues"
   },
-  "homepage": "https://github.com/danielpower/balatro#readme"
+  "description": "Data for Balatro related projects",
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/danielpower/balatro#readme",
+  "keywords": [
+    "balatro"
+  ],
+  "license": "ISC",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "publish": "bun run build && npm publish",
+    "scrape": "bun scraper/scrape.ts"
+  },
+  "types": "dist/index.d.ts"
 }
